@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<title>Pentol Asynchronous</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+	<link href="fa/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="screen" id="pos1">
+	<h2>Halo, ... siapa ya? Kenalan dulu dong...</h2>
+	<input type="text" class="box" id="name" placeholder="Tuliskan nama kamu dulu..." />
+	<button class="primary" onclick="action(1)">Lanjut</button>
+</div>
+<div class="screen rata-tengah" id="pos2">
+	<h2>Halo, <span class="displayName"></span>! Sekarang aku pengen tau, kamu suka yang mana?</h2>
+	<div class="bagi bagi-2">
+		<div class="wrap">
+			<div class="bayangan-5 rounded smallPadding rata-tengah pt-4 pb-4 mt-4 pointer rasa" onclick="chooseRasa('pedes')" id="pedes">
+				<div class="wrap">
+					<i class="fas fa-fire"></i>
+					<h3>Pedes</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bagi bagi-2">
+		<div class="wrap">
+			<div class="bayangan-5 rounded smallPadding rata-tengah pt-4 pb-4 mt-4 pointer rasa" onclick="chooseRasa('biasa')" id="biasa">
+				<div class="wrap">
+					<i class="fas fa-wind"></i>
+					<h3>Biasa Aja</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="screen" id="pos3">
+	<h2>Pilihan tepat! Kamu tahu apa yang paling kamu suka</h2>
+	<p>
+		Sekarang, kemana pentolmu akan tiba?
+	</p>
+	<textarea id="alamat" class="box" placeholder="Mungkin kamu bisa memasukkan alamat rumah untuk menemani senggangmu atau alamat kantor untuk boost produktivitasmu"></textarea>
+	<button class="mt-3" onclick="action(3)">Kirimkan ke sini!</button>
+</div>
+<div class="screen" id="pos4">
+	<h2>Yakin nih cuma beli satu porsi?</h2>
+	<p>Nanti kalau kurang nyesel loh... Coba deh tambah satu atau dua porsi lagi</p>
+	<div class="bagi lebar-40"><input type="number" class="box" value="1" min="1" oninput="changePorsi(this.value)"></div>
+	<div class="bagi lebar-5"></div>
+	<div class="bagi lebar-50"><button onclick="action(4)">Aku jadi pesen <span id="countPorsi">1</span> porsi</button></div>
+</div>
+
+<script src="js/base.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

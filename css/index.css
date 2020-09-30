@@ -1,0 +1,65 @@
+body {
+    background-color: #fff;
+    color: #444;
+}
+.box {
+    height: 60px !important;
+    padding: 0px 25px !important;
+}
+.screen {
+    position: absolute;
+    top: 200px;left: 20%;right: 20%;
+    display: none;
+}
+.screen:nth-child(1) {
+    display: block;
+}
+.screen button {
+    background-color: #fff;
+    border: 3px solid #444;
+    margin-top: 30px;
+    height: 60px;
+    padding: 0px 60px;
+}
+.screen button:hover {
+    background-color: #444;
+    color: #fff;
+}
+.screen h2 {
+    font-family: LivvicBold;
+    font-size: 30px;
+}
+.screen p {
+    font-size: 24px;
+    line-height: 46px;
+}
+
+#pos2 { top: 120px; }
+#pos2 i { font-size: 45px; }
+#pos2 h3 { margin-top: 35px; }
+#pos2 .rasa.active {
+    background-color: #444;
+    color: #fff;
+}
+
+#pos3 { top: 130px; }
+#pos3 textarea {
+    height: 200px !important;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+@media (max-width: 480px) {
+    .screen {
+        left: 10%;right: 10%;top: 80px;
+        margin-bottom: 40px;
+    }
+    #pos1 { top: 180px; }
+    #pos2 { top: 20px; }
+    #pos3 { top: 30px; }
+    #pos3 textarea {
+        height: 200px !important;
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
