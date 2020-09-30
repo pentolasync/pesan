@@ -35,7 +35,7 @@ const action = pos => {
         show("#pos4")
     }else if (pos == 4) {
         let url = new URL('https://wa.me/62881036183076')
-        url.searchParams.set('message', `Halo, aku ${state.name} mau order pentol ${state.porsi} porsi, rasa ${state.rasa} ya. Nanti dikirim ke ${state.alamat}`)
+        url.searchParams.set('text', `Halo, aku ${state.name} mau order pentol ${state.porsi} porsi, rasa ${state.rasa} ya. Nanti dikirim ke ${state.alamat}`)
         window.location = url.toString()
     }
 }
